@@ -8,10 +8,10 @@
     </head>
 <body>
 <div class="bgimg">
-    <header class="logo">
-       <img src="logo.svg" alt="logo">
-    </header>
-    <section>
+    <div class="header">
+       <img src="logo.svg" alt="logo" class="logo">
+    </div>
+    <div class="row">
         <h1>Hello Friends!</h1>
         <h3>Code with passion</h3>
         <ul class="icons">
@@ -21,7 +21,7 @@
             <a href=""><i class="fa fa-vimeo" aria-hidden="true" style="font-size:24px"></i></a>
             <a href=""><i class="fa fa-github" aria-hidden="true" style="font-size:24px"></i></a>
         </ul>
-    </section>
+    </div>
 </div>
 </body>
 
@@ -31,33 +31,36 @@
         color: white;  
         text-align: center;  
         font-size: 72px; 
-        padding: 70px 0;
-    }
+        padding-top: 400px;
+        padding-bottom: 10px; 
+    margin-bottom: 0rem;
+   }
     h3 {
         font-family: "Arial", sans-serif;
         color: white;  
         text-align: center; 
         font-size: xx-large; 
+        margin: 0px;
     }
     i {
         color: white;  
-        padding: 10px;
+        padding: 20px;
     }
     body, html {height: 100%}
 
     section {
-        padding: 10px;
+        padding: 20px;
         height: 200px
     }
     .bgimg {
-      background-image: url('pxfuel.com.jpg');
+      background-image: url('pxfuel.com_blue.jpg');
       min-height: 100%;
       background-position: center;
       background-size: cover;
     }
     .logo {
         float: right;
-        padding: 10px;
+        padding: 20px;
 
     }
     .icons {
@@ -66,7 +69,6 @@
         opacity: 0;
         transform: scale(2);
         filter: blur(4px);
-        padding: 10px;
     }
     @keyframes flyin {
     to { 
@@ -76,7 +78,13 @@
     }
 }
     </style>
-
+<script>
+    var bgimg = new Image();
+    bgimg.onload = function(){
+    myDiv.style.backgroundImage = 'url(' + bgimg.src + ')';
+};
+    bgimg.src = url('pxfuel.com_red.jpg');
+</script>
 
 </html>
 
