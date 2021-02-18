@@ -21,6 +21,10 @@
         padding: 20px;
     }
 
+    i:hover{
+      opacity: 0.8;
+    }
+
     body, html {height: 100%}
 
     section {
@@ -43,7 +47,7 @@
     .backgroundImage:hover {
       opacity: 0.8;
     }
-
+    
     .logo {
         float: right;
         padding: 20px;
@@ -67,4 +71,7 @@
       font-family: "Arial", sans-serif;
       color: white;  
       text-align: center; 
+    }
+    .footer:hover {
+      opacity: 0.8;
     }
