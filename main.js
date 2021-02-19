@@ -1,5 +1,10 @@
-function myFunction() {
-    var d = new Date();
-    var n = d.getFullYear();
-    document.getElementById("date").innerHTML = n;
+document.getElementById("date").innerHTML = Date();
+
+
+  function on() {
+    document.getElementById("overlay").style.display = "block";
+  }
+  
+  function off() {
+    document.getElementById("overlay").style.display = "none";
   }
